@@ -1,6 +1,6 @@
 # magic_book_exercise
 
-A new Flutter project.
+Making app to learn flutter layouting .
 
 ## Getting Started
 
