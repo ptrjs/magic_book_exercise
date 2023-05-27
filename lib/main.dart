@@ -21,6 +21,31 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const DashboardView(),
+      builder: (context, child) {
+        return Material(
+          child: Stack(
+            children: [
+              child!,
+              Positioned(
+                left: 2,
+                bottom: 70,
+                child: InkWell(
+                  onTap: () => Get.back(),
+                  child: const CircleAvatar(
+                    radius: 12.0,
+                    backgroundColor: Colors.black,
+                    child: Icon(
+                      size: 12.0,
+                      Icons.arrow_back,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }
